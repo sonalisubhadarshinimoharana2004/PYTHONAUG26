@@ -1,0 +1,27 @@
+body {
+  background: #f5f5fa;
+  font-family: sans-serif;
+  margin: 40px;
+}
+
+.text {
+  font-size: 28px;
+  line-height: 1.3;
+  color: #2e2840;
+  max-width: 600px;
+}
+
+.orange {
+  color: #f26522;
+  font-weight: bold;
+}
+
+.blue {
+  color: #5865f2;
+  font-weight: bold;
+}
+
+.purple {
+  color: #8a43f2;
+  font-weight: bold;
+}
