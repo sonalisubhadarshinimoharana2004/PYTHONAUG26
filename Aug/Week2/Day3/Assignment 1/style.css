@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Outer black frame */
+.frame {
+    width: 70%;
+    max-width: 900px;
+    padding: 70px;
+    background-color: #242224;
+}
+
+/* White inner border */
+.white-border {
+    background-color: white;
+    padding: 70px;
+}
+
+/* Picture area */
+.picture {
+    width: 100%;
+    overflow: hidden;
+}
+
+.picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
