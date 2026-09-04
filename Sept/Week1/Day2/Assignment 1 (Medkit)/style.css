@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #10194a;
+    background: #ffffff;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    background: #ffffff;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    color: #252b78;
+}
+
+.logo span {
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 40px;
+}
+
+.navbar nav a,
+.auth a {
+    text-decoration: none;
+    color: #30345c;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.signup {
+    border: 1px solid #7775d6;
+    padding: 12px 25px;
+    border-radius: 6px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 560px;
+    display: flex;
+    background: #f8f8fd;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    width: 57%;
+    padding: 100px 0 70px 8%;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 46px;
+    line-height: 1.25;
+    max-width: 520px;
+    color: #10194a;
+}
+
+.hero-content h1 span {
+    color: #f5a333;
+}
+
+.hero-content h1 strong {
+    display: block;
+    color: #10194a;
+}
+
+.hero-content p {
+    margin-top: 28px;
+    max-width: 510px;
+    color: #7b7e99;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.get-started {
+    border: none;
+    background: #f5a333;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.watch {
+    border: none;
+    background: transparent;
+    color: #4d50a9;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.play {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 34px;
+    height: 34px;
+    margin-right: 8px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 12px #ddd;
+}
+
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image {
+    width: 43%;
+    position: relative;
+    overflow: hidden;
+}
+
+.purple-bg {
+    position: absolute;
+    inset: 0;
+    background: #4c4aaa;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.hero-image img {
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    width: 80%;
+    max-height: 520px;
+    object-fit: contain;
+    z-index: 2;
+}
+
+
+/* Floating cards */
+
+.floating {
+    position: absolute;
+    z-index: 5;
+    background: white;
+    padding: 13px 20px;
+    border-radius: 5px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    font-size: 11px;
+    color: #252a58;
+}
+
+.appointment {
+    left: -5%;
+    top: 65%;
+}
+
+.lab {
+    right: 5%;
+    top: 48%;
+}
+
+.mri {
+    right: 15%;
+    top: 70%;
+}
+
+
+/* ================= CATEGORY ================= */
+
+.category {
+    padding: 75px 8%;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    color: #11194b;
+}
+
+.arrows {
+    display: flex;
+    gap: 10px;
+}
+
+.arrows button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #f5f5fc;
+    color: #5556a9;
+    font-size: 24px;
+}
+
+.arrows button:last-child {
+    background: #4c4aaa;
+    color: white;
+}
+
+
+/* Category cards */
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.category-card {
+    height: 170px;
+    background: #f8f8fc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.category-card.active {
+    background: #4c4aaa;
+    color: white;
+    box-shadow: 0 15px 30px rgba(76, 74, 170, 0.25);
+}
+
+.category-card .icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.category-card p {
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* ================= WHY MEDKIT ================= */
+
+.why-medkit {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    padding: 40px 8% 90px;
+}
+
+.why-image {
+    width: 43%;
+    position: relative;
+    min-height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.why-image img {
+    position: relative;
+    width: 75%;
+    max-height: 400px;
+    object-fit: contain;
+    z-index: 2;
+}
+
+
+/* Decorative dots */
+
+.dots {
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-image: radial-gradient(
+        #d9d9e8 2px,
+        transparent 2px
+    );
+    background-size: 20px 20px;
+    opacity: 0.7;
+}
+
+
+/* Why content */
+
+.why-content {
+    width: 57%;
+}
+
+.why-content h2 {
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+.why-content h2 span {
+    color: #f5a333;
+}
+
+.feature {
+    margin-bottom: 25px;
+}
+
+.feature h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.check {
+    color: #4c4aaa;
+    margin-right: 10px;
+}
+
+.feature p {
+    color: #85879b;
+    font-size: 12px;
+    line-height: 1.7;
+    max-width: 520px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .category-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-medkit {
+        gap: 30px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .auth {
+        gap: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 60px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 450px;
+    }
+
+    .category {
+        padding: 55px 25px;
+    }
+
+    .section-title h2 {
+        font-size: 23px;
+    }
+
+    .category-container {
+        grid-template-columns: 1fr;
+    }
+
+    .why-medkit {
+        flex-direction: column;
+        padding: 30px 25px 70px;
+    }
+
+    .why-image,
+    .why-content {
+        width: 100%;
+    }
+
+    .why-content h2 {
+        font-size: 27px;
+    }
+
+}
+   
