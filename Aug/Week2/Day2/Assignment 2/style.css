@@ -1,0 +1,27 @@
+body {
+    
+    background-color:white;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    width: 1000px;
+    font-size: 68px;
+    color: #302e4f;
+}
+
+.orange {
+    color: orangered;
+    font-weight: bold;
+    width: 100px;
+}
+
+.blue {
+    color: blue;
+    width: 100px;
+}
+
+.purple {
+    color:blueviolet;
+    width: 100px;
+}

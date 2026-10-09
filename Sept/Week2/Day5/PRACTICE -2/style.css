@@ -1,0 +1,812 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #171717;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    padding: 0 3.5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #ffffff;
+}
+
+
+/* Logo */
+
+.logo {
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #e7a928;
+}
+
+
+/* Navigation */
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar nav a {
+    font-size: 13px;
+    font-weight: 500;
+    color: #444;
+}
+
+.navbar nav a:hover,
+.navbar nav .active {
+    color: #111;
+}
+
+
+/* Right side */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+/* Search */
+
+.search {
+    width: 180px;
+    height: 38px;
+
+    border-radius: 20px;
+
+    background: #f6f6f6;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 14px;
+}
+
+.search input {
+    width: 100%;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    font-size: 12px;
+}
+
+.search i {
+    color: #555;
+    font-size: 13px;
+}
+
+
+/* Profile */
+
+.profile {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #171717;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 93%;
+    height: 440px;
+
+    margin: 0 auto;
+
+    border-radius: 15px;
+
+    background: #f7f7f7;
+
+    display: flex;
+    overflow: hidden;
+}
+
+
+/* Hero text */
+
+.hero-content {
+    width: 50%;
+
+    padding: 55px 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 57px;
+    line-height: 1.05;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #e8a624;
+}
+
+.hero-content p {
+    width: 80%;
+
+    color: #888;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 35px;
+}
+
+
+/* Buttons */
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.btn {
+    padding: 12px 18px;
+
+    border-radius: 25px;
+
+    font-size: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dark-btn {
+    background: #171717;
+    color: white;
+}
+
+.light-btn {
+    background: white;
+    color: #444;
+}
+
+
+/* Hero image */
+
+.hero-image {
+    width: 50%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+    width: 93%;
+
+    margin: 20px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr
+        1fr
+        1.35fr;
+
+    gap: 12px;
+}
+
+
+/* Feature box */
+
+.feature-box {
+    min-height: 160px;
+
+    padding: 25px 20px;
+
+    background: #f8f8f8;
+
+    border-radius: 15px;
+}
+
+.feature-box > i {
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+.feature-box h3 {
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+.feature-box p {
+    font-size: 11px;
+
+    line-height: 1.6;
+
+    color: #777;
+}
+
+
+/* =========================
+   FEATURED RECIPE
+========================= */
+
+.featured {
+    min-height: 160px;
+
+    border-radius: 15px;
+
+    background: #fafafa;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 10px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.featured img {
+    width: 47%;
+    height: 140px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+.featured-content {
+    padding: 15px;
+}
+
+.featured-content small {
+    color: #e4a329;
+
+    font-size: 10px;
+
+    font-weight: 700;
+}
+
+.featured-content h3 {
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin: 5px 0 15px;
+}
+
+.featured-content a {
+    font-size: 11px;
+
+    font-weight: 600;
+
+    text-decoration: underline;
+}
+
+.play {
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #f5a623;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 15px;
+    left: 125px;
+}
+
+.play i {
+    font-size: 11px;
+}
+
+
+/* =========================
+   CHEF SECTION
+========================= */
+
+.chef-section {
+    width: 93%;
+
+    margin: 90px auto 0;
+}
+
+
+/* Heading */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+
+    line-height: 1.25;
+
+    font-weight: 600;
+}
+
+.section-heading h2 span {
+    color: #e8a624;
+}
+
+.section-heading p {
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+
+    margin-top: 15px;
+}
+
+
+/* =========================
+   CHEF CONTENT
+========================= */
+
+.chef-content {
+    display: grid;
+
+    grid-template-columns:
+        1.2fr
+        1.2fr
+        1fr
+        1.2fr;
+
+    gap: 18px;
+
+    align-items: center;
+}
+
+
+/* Common card */
+
+.cook-card,
+.quote-card,
+.achievement,
+.chef-card {
+    height: 310px;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+
+/* Left image */
+
+.cook-card {
+    position: relative;
+}
+
+.cook-card img {
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.step {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    background: #191919;
+
+    color: white;
+
+    padding: 9px 14px;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+}
+
+.easy {
+    position: absolute;
+
+    bottom: 18px;
+    left: 15px;
+
+    background: white;
+
+    padding: 10px 15px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+
+    color: #555;
+}
+
+.easy i {
+    color: #e8a624;
+
+    margin-right: 5px;
+}
+
+
+/* =========================
+   QUOTE CARD
+========================= */
+
+.quote-card {
+    background: #f5a623;
+
+    color: white;
+
+    padding: 30px;
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.quote-card .heart {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    width: 35px;
+    height: 35px;
+
+    background: white;
+
+    color: #555;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-card h3 {
+    font-size: 25px;
+
+    line-height: 1.35;
+
+    font-weight: 500;
+
+    margin-bottom: 30px;
+}
+
+.author {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.author-img {
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #f5a623;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 600;
+}
+
+.author strong {
+    display: block;
+
+    font-size: 10px;
+}
+
+.author small {
+    font-size: 9px;
+
+    opacity: .8;
+}
+
+
+/* =========================
+   ACHIEVEMENT
+========================= */
+
+.achievement {
+    background: #fafafa;
+
+    padding: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.achievement-box {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 13px;
+
+    background: white;
+
+    border-radius: 12px;
+}
+
+.achievement-box > i {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    background: #fff5dc;
+
+    color: #e8a624;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+}
+
+.achievement-box strong {
+    display: block;
+
+    font-size: 11px;
+}
+
+.achievement-box small {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 9px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   CHEF IMAGE
+========================= */
+
+.chef-card {
+    position: relative;
+}
+
+.chef-card img {
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.live {
+    position: absolute;
+
+    top: 15px;
+    left: 15px;
+
+    color: white;
+
+    font-size: 10px;
+}
+
+.viewers {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    background: white;
+
+    padding: 7px 10px;
+
+    border-radius: 20px;
+
+    font-size: 10px;
+}
+
+.chef-text {
+    position: absolute;
+
+    bottom: 20px;
+    left: 20px;
+
+    color: white;
+
+    font-size: 23px;
+
+    line-height: 1.25;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .navbar nav {
+        gap: 15px;
+    }
+
+    .search {
+        width: 130px;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+    }
+
+    .features {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .chef-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: auto;
+
+        padding: 20px;
+
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+
+    .navbar nav {
+        order: 3;
+
+        width: 100%;
+
+        justify-content: center;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .hero {
+        height: auto;
+
+        flex-direction: column;
+    }
+
+    .hero-content {
+        width: 100%;
+
+        padding: 45px 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        width: 100%;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .chef-content {
+        grid-template-columns: 1fr;
+    }
+
+    .cook-card,
+    .quote-card,
+    .achievement,
+    .chef-card {
+        height: 300px;
+    }
+}

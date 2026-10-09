@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register & Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Left Side -->
+        <div class="welcome-section">
+            <div class="logo">✦</div>
+
+            <h1>Welcome Back!</h1>
+
+            <p>
+                Create your account and enjoy a simple,
+                secure and beautiful experience.
+            </p>
+
+            <div class="features">
+                <p>✓ Easy Registration</p>
+                <p>✓ Secure Login</p>
+                <p>✓ Local Storage</p>
+            </div>
+        </div>
+
+
+        <!-- Right Side -->
+        <div class="form-section">
+
+            <!-- Register Form -->
+            <div class="form-box register-box">
+
+                <h2>Create Account</h2>
+
+                <p class="subtitle">
+                    Register a new account
+                </p>
+
+                <form id="registerForm">
+
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                        >
+                    </div>
+
+                    <div class="input-row">
+
+                        <div class="input-group">
+                            <label>Age</label>
+                            <input
+                                type="number"
+                                id="age"
+                                placeholder="Age"
+                            >
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="Phone number"
+                            >
+                        </div>
+
+                    </div>
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input
+                            type="email"
+                            id="registerEmail"
+                            placeholder="Enter your email"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+
+                        <div class="password-box">
+                            <input
+                                type="password"
+                                id="registerPassword"
+                                placeholder="Create password"
+                            >
+
+                            <button
+                                type="button"
+                                class="show-btn"
+                                onclick="togglePassword('registerPassword', this)"
+                            >
+                                Show
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="main-btn">
+                        Create Account
+                    </button>
+
+                    <p id="registerMessage" class="message"></p>
+
+                </form>
+
+                <p class="switch-text">
+                    Already have an account?
+                    <button type="button" onclick="showLogin()">
+                        Login
+                    </button>
+                </p>
+
+            </div>
+
+
+            <!-- Login Form -->
+            <div class="form-box login-box hidden">
+
+                <h2>Welcome Back</h2>
+
+                <p class="subtitle">
+                    Login to your account
+                </p>
+
+                <form id="loginForm">
+
+                    <div class="input-group">
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="loginEmail"
+                            placeholder="Enter your email"
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+
+                        <div class="password-box">
+
+                            <input
+                                type="password"
+                                id="loginPassword"
+                                placeholder="Enter your password"
+                            >
+
+                            <button
+                                type="button"
+                                class="show-btn"
+                                onclick="togglePassword('loginPassword', this)"
+                            >
+                                Show
+                            </button>
+
+                        </div>
+                    </div>
+
+                    <button type="submit" class="main-btn">
+                        Login
+                    </button>
+
+                    <p id="loginMessage" class="message"></p>
+
+                </form>
+
+                <p class="switch-text">
+                    Don't have an account?
+                    <button type="button" onclick="showRegister()">
+                        Register
+                    </button>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

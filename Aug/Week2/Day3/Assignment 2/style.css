@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Layout Grid */
+.comparison-container {
+  display: flex;
+  gap: 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.card-column {
+  flex: 1;
+}
+
+/* Section Titles */
+.section-title {
+  color: #3b4b68;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+}
+
+/* Grey Background Card */
+.form-card {
+  background-color: #eeeeee;
+  padding: 35px 25px;
+  border-radius: 2px;
+}
+
+/* Form Styles */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #4a5975;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 0px;
+  background-color: #ffffff;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: #d1d5db;
+}
+
+/* DO: Label and input spacing is close */
+.do-group {
+  margin-bottom: 20px;
+}
+
+.do-group label {
+  margin-bottom: 4px;
+}
+
+.do-group:last-child {
+  margin-bottom: 0;
+}
+
+/* DON'T: Label and input spacing is far apart */
+.dont-group {
+  margin-bottom: 20px;
+}
+
+.dont-group label {
+  margin-bottom: 22px;
+}
+
+.dont-group:last-child {
+  margin-bottom: 0;
+}
