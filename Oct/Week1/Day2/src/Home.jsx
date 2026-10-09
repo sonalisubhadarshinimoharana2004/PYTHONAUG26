@@ -1,22 +1,21 @@
 function Home(props){
-    
-    return (
-        <div>
-            This is Home page
-            <br />
+    return(
+        <div>this is home page
+        < br />
+        value : {props.v}
+        < br />
+        string : {props.str}
+        < br />
+        Array value : {props.arr}
+        < br />
+        Object value : {JSON.stringify(props.obj)}
+        < br />
+        Object name : {props.obj.name}
 
-            Value :{props.v}
-            <br />
-            String : {props.str}
-            <br />
-            Array value :{props.arr}
-            <br />
-            Object Value : {JSON.stringify(props.obj)}
-            <br />
-
-            Object Name : {props.obj.name}
-        </div>
+    </div>
     )
-}
+    
+   
 
+}
 export default Home
