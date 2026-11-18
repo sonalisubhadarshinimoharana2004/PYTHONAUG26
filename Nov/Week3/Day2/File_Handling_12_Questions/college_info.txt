@@ -1,0 +1,4 @@
+College Name: gitam
+Location: bbsr
+Establishment Year: 2008
+Number of Departments: mca

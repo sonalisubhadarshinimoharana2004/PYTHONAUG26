@@ -1,0 +1,10 @@
+laptop
+mobile
+keyboard
+mouse
+headphone
+monitor
+printer
+tablet
+charger
+speaker

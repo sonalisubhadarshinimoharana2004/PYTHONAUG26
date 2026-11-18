@@ -1,0 +1,10 @@
+Household 1: 120.0
+Household 2: 150.0
+Household 3: 200.0
+Household 4: 180.0
+Household 5: 250.0
+Household 6: 100.0
+Household 7: 300.0
+Household 8: 220.0
+Household 9: 160.0
+Household 10: 130.0

@@ -1,0 +1,8 @@
+paneer
+mashroom
+bread
+sandwich
+pizza
+apple
+banana
+orange

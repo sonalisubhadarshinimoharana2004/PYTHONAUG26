@@ -1,0 +1,10 @@
+Student Name: sonali
+Roll Number: 101
+Subject 1: 85.0
+Subject 2: 90.0
+Subject 3: 78.0
+Subject 4: 88.0
+Subject 5: 92.0
+Total Marks: 433.0
+Percentage: 86.60%
+Result: PASS

@@ -1,0 +1,5 @@
+ID: 101, Name: sonali, Department: mca, Monthly Salary: 50000
+ID: 102, Name: rohan, Department: mba, Monthly Salary: 40000
+ID: 103, Name: done, Department: btech, Monthly Salary: 30000
+ID: 105, Name: biku, Department: science, Monthly Salary: 60000
+ID: 106, Name: gugi, Department: english, Monthly Salary: 15000
